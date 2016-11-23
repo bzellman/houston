@@ -1,0 +1,100 @@
+<div class="container" id="header">
+  <div class="container text-center logo center">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <img class="main-logo-image" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/sherpa.png">
+      </div>
+    </div>
+    <div class="row header-text">
+      <h1 class="logo-text">WELCOME TO <span class="home-color">SHERPA</span></h1>
+      <h2>Perfect Plans... <strong>Zero Planning</strong></h2>
+    </div>
+    <div class="row">
+      <div class="sign-up-form col-md-4 col-md-offset-4">
+
+        <%= form_for(@signup, signup: newSignUp_path, remote: true) do |f| %>
+            <%= f.text_field :email, class: 'form-control', placeholder: 'Enter Your Email Address'%><br>
+            <%= f.submit 'Sign Up For Early Access', class: 'btn btn-sherpa-primary' %>
+        <% end %>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container text-center home-section" id="what">
+  <h3>WE PLAN | <span class="home-color">YOU DO</span></h3>
+  <p class="col-md-10 col-md-offset-1 home-parahraph-big"><strong>Sherpa is your personal local guide.</strong> We’re here to guide you to an experience that is perfectly you.  Need plans for the night?  Weekend? Robot-themed bar crawl?   We’ve got you covered.
+    Our team of social professionals are here to help craft plans and take care of all reservations and booking needs to help you make the most of your day, night, and, well, life.  No one should make the climb to the social summit alone…
+    Let a Sherpa lead the way.</p>
+</div>
+
+
+<div class="container text-center home-section" id="how">
+  <h3>HOW TO <strong>SHERPA</strong></h3>
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <img class="img-responsive how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/Scenester+Scratch-01.png">
+      <h4>TELL US ABOUT YOU</h4>
+      <p class="how-text">Tell us a little bit about yourself so your personal Sherpa can craft a local experience that is purely you.  We’ll learn what you’re looking for and what you’re not to get you plans and deliver the scene in a way that will blow your mind.</p>
+    </div>
+    <div class="col-md-4  col-sm-12">
+      <img class="img-responsive how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/Scenester+Scratch-03.png">
+      <h4>WE CREATE AWESOME PLANS</h4>
+      <p class="how-text">Your social expert will then plan you a trek through the local scene with every detail you need to maximize your time out on the town. We kick you a detailed itinerary for your approval and your Sherpa is then at your beck and call to make any changes or answer any questions about the scene.</p>
+    </div>
+    <div class="col-md-4  col-sm-12">
+      <img class="img-responsive how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/Scenester+Scratch-02.png">
+      <h4>YOU EXPERIENCE THE SCENE</h4>
+      <p class="how-text">With recommendations, plans, and insider tips you’re prepared to bask in the city’s warm embrace. So…go do it.  We’ll be here if you need anything while on the journey. Go forth and experience!</>
+    </div>
+  </div>
+
+</div>
+<div class="container text-center home-section" id="what">
+  <h3>WHAT IS A SHERPA</h3>
+  <p class="col-md-10 col-md-offset-1 home-parahraph-big"><strong>Sherpas are locals with a deep knowledge and love of their city.</strong>  These social professionals assist travelers and city-adventurers in crafting plans to maximize their time out on the town.   Local Sherpas map out a suggested plan for your time out and can handle all bookings and reservations so you can stop stressing and start living!</>
+  <div class="what-button">
+    <form action="http://www.surveygizmo.com/s3/2500932/Sherpa">
+      <input class="btn btn-sherpa-primary" type="submit" value="BECOME A SHERPA" />
+    </form>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6 sherpa-image img-responsive">
+    <img class="img how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/bar_dude.png">
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6 sherpa-image img-responsive">
+    <img class="img how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/lady.original.png">
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6 sherpa-image img-responsive">
+    <img class="img how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/guy.original.png">
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6 sherpa-image img-responsive">
+    <img class="img how-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/hipster_coffee.png">
+  </div>
+
+</div>
+
+<div class="container text-center home-section" id="get">
+  <div class="row-to-vertical">
+    <div class="col-md-8 to-adjust-height-large">
+      <h3>GET A SHERPA</h3>
+      <div class="paragraph-for-middle">
+        <p><strong>Here comes the fun part...</strong> Tell us what you’d like to do (food, music, shows, etc.) or generally what you’re in the mood for to help plan the perfect expedition. Give us as little or as much information as you’d like and from the info provided, we’ll put together an amazing time for you.   </p>
+      </div>
+      <div class="get-button">
+        <form action="http://www.surveygizmo.com/s3/2500932/Sherpa">
+          <input class="btn btn-sherpa-primary" type="submit" value="START AN ADVENTURE" />
+        </form>
+      </div>
+    </div>
+    <div class="col-md-4 to-adjust-height-large">
+      <img class="img-responsive get-image center-block" src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/itinerary_sample.png">
+    </div>
+
+  </div>
+</div>
+
+<div class="container" id="where">
+
+</div>

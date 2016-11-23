@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sherpa</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%- stylesheet_link_tag     'application', 'https://fonts.googleapis.com/css?family=Arimo|Titillium+Web:300' %>
+  <%- stylesheet_link_tag     'application', 'https://fonts.googleapis.com/css?family=|Muli|Arimo|Titillium+Web:300' %>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+<header>
+  <%= render 'layouts/header' %>
+</header>
+<%= yield %>
+<%= render 'layouts/footer' %>
+</body>
+</html>

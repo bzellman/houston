@@ -1,0 +1,179 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$sherpa-blue: #03a9f4;
+$main-font-grey: #696969;
+
+/** general **/
+
+.btn-sherpa-primary{
+  background-color: $sherpa-blue;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #ffffff;
+  border-style: none;
+  border-bottom-color: $sherpa-blue;
+  border-radius: 50px;
+  margin: 15px;
+}
+
+.get-button .btn .btn-sherpa-primary{
+  width: 350px;
+}
+
+.what-button .btn{
+  width: 350px;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: $sherpa-blue;
+}
+
+/** navbar **/
+.navbar{
+  height: auto !important;
+  z-index: 9999;
+}
+.navbar-brand{
+  padding: 5px 5px;
+  float: left;
+  height: 20px;
+}
+
+.logo_image{
+  height: 40px;
+}
+
+nav li{
+  text-align: center;
+}
+
+body {
+  padding-top: 50px;
+}
+
+/** footer **/
+
+footer {
+  margin-top: 45px;
+  padding-top: 25px;
+  border-top: 1px solid #eaeaea;
+  background: $sherpa-blue;
+}
+
+footer p{
+  color: white;
+  font-size: .8em;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/*** Home Page ***/
+
+.main-logo-image {
+  padding-top: 20px;
+  height: 125px;
+}
+
+#header{
+  background-image: url(https://s3-us-west-2.amazonaws.com/topofthemontain/images/atx_field.jpg);
+  background-color: darkgrey;
+  background-size: 100%;
+  width: 100%;
+}
+
+.header-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.logo-text{
+  font-size: 4em;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.home-color{
+  color: $sherpa-blue;
+}
+
+.home-section{
+  padding-top: 80px;
+}
+
+.home-section h3 {
+  padding-bottom: 20px;
+}
+
+.home-parahraph-big{
+  padding-bottom: 20px;
+}
+
+
+.how-image{
+  max-height: 200px;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.how-text{
+  padding-top: 15px;
+}
+
+.sherpa-image {
+  padding: 10px;
+}
+
+.get-image{
+  height: 500px;
+}
+
+h1, h2, h3 {
+  font-size: 2.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 1.3em;
+  font-family: 'Muli', sans-serif;
+  font-color: $main-font-grey;
+  line-height: 1.8;
+}
+
+.sign-up-form {
+  padding-bottom: 30px;
+}
+
+nav li{
+  padding-right: 10px;
+}
+
+small p{
+  padding-left: 10px;
+}
