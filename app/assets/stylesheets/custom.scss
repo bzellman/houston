@@ -148,21 +148,30 @@ footer ul li {
   }
 
   .how-image {
-    padding: 0px;
+    padding-bottom: 10px;
     width: 150px;
     height: 150px;
+  }
+
+  .img-responsive{
+    height: 127px;
+    width: 127px;
+  }
+
+  .sherpa-image-container-top{
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .btn {
-    width: auto;
+  .how-image {
+    padding-bottom: 10px;
+    width: 150px;
+    height: 150px;
   }
 
-  .how-image {
-    padding: 0px;
-    padding-bottom: 0px;
-    width: 100%;
+  .img-responsive{
+    padding-bottom: 20px;
     height: 100%;
   }
 }
