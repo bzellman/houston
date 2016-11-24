@@ -17,15 +17,6 @@ $main-font-grey: #696969;
   margin: 15px;
 }
 
-.get-button .btn .btn-sherpa-primary{
-  width: 350px;
-}
-
-.what-button .btn{
-  width: 350px;
-  margin-bottom: 25px;
-}
-
 .form-control {
   text-align: center;
 }
@@ -103,8 +94,10 @@ footer ul li {
 #header{
   background-image: url(https://s3-us-west-2.amazonaws.com/topofthemontain/images/atx_field.jpg);
   background-color: darkgrey;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  //background-repeat: no-repeat;
 }
 
 .header-text {
@@ -139,6 +132,7 @@ footer ul li {
 .how-image{
   max-height: 200px;
   width: auto;
+  height: auto;
   padding-bottom: 20px;
 }
 
@@ -146,8 +140,48 @@ footer ul li {
   padding-top: 15px;
 }
 
-.sherpa-image {
-  padding: 10px;
+
+
+@media (max-width: 480px) {
+  .btn {
+    width: auto;
+  }
+
+  .how-image {
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .btn {
+    width: auto;
+  }
+
+  .how-image {
+    padding: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .btn .btn-sherpa-primary {
+    width: 400px;
+  }
+}
+
+@media (min-width: 980px) {
+  .btn .btn-sherpa-primary {
+    width: 600px;
+  }
+
+}
+
+.image-container{
+  width: 100%;
 }
 
 .get-image{
