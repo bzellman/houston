@@ -161,7 +161,7 @@ footer ul li {
   .how-image {
     padding-bottom: 10px;
     width: 150px;
-    height: 150px;
+    height: auto;
   }
 
   .img-responsive{
@@ -177,7 +177,7 @@ footer ul li {
 @media (min-width: 481px) and (max-width: 767px) {
   .how-image {
     width: 150px;
-    height: 150px;
+    height: auto;
   }
 
   .img-responsive{
