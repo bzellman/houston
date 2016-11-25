@@ -197,7 +197,7 @@ footer ul li {
   }
 
   .sherpa-image{
-    height: 225px;
+    height: auto;
     width: 225px;
   }
 
@@ -214,7 +214,7 @@ footer ul li {
   }
 
   .sherpa-image{
-    height: 225px;
+    height: auto;
     width: 225px;
   }
 }
@@ -246,4 +246,8 @@ nav li{
 
 small p{
   padding-left: 10px;
+}
+
+h4 {
+  font-weight: bold;
 }
