@@ -17,6 +17,13 @@ $main-font-grey: #696969;
   margin: 15px;
 }
 
+.dark-background{
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .form-control {
   text-align: center;
 }
@@ -186,7 +193,7 @@ footer ul li {
 
   .how-image{
     width: 150px;
-    height: auto;git
+    height: auto;
   }
 
   .sherpa-image{
