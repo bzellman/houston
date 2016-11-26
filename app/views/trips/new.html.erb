@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="container-fluid jumbotron text-center">
+    <h1>New Trip Setup</h1>
+
+  </div>
+
+  <div class="container-fluid jumbotron form-inline text-left">
+
+    <%= form_for (@trip) do |f| %>
+
+        <%= f.label :first_name %>
+        <%= f.text_field :first_name, class: 'form-control' %></br> </br>
+
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name, class: 'form-control' %></br> </br>
+
+        <%= f.label :sherpa_owner %>
+        <%= f.text_field :sherpa_owner, class: 'form-control' %></br> </br>
+
+        <%= f.label :date_of_travel %>
+        <%= f.date_select :date_of_travel, class: 'form-control' %></br> </br>
+
+        <%= f.submit "Create Trip", class:"btn btn-sherpa-primary" %>
+    <% end %>
+
+  </div>
+</div>
