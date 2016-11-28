@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161126181504) do
+ActiveRecord::Schema.define(version: 20161128052111) do
 
   create_table "signups", force: :cascade do |t|
     t.string   "email"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(version: 20161126181504) do
     t.string   "trip_message"
     t.string   "sherpa_owner"
     t.date     "date_of_travel"
+    t.string   "client_email"
+    t.string   "client_phone"
     t.index ["tripitem_id"], name: "index_trips_on_tripitem_id"
   end
 

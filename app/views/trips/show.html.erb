@@ -34,6 +34,7 @@
     <div class="container jumbotron center-block text-center">
       <h2>Admin Options</h2>
       <button class="btn-sherpa-primary button_link"><%= link_to 'Edit Trip Details', edit_trip_path(@trip)%></button>
+      <button class="btn-sherpa-primary button_link"><%= link_to 'Send Itinerary', trips_send_itinerary_path(:id => @trip.id)%></button>
 
     </div>
   <% end %>
