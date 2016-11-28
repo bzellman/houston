@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, controller: "clearance/sessions", only: [:create]
 
@@ -10,7 +9,7 @@ Rails.application.routes.draw do
       only: [:create, :edit, :update]
   end
 
-  get "/sign_in" => "clearance/sessions#new", as: "sign_in"
+  get "/sign_in" => "clearance/sessions#new", as: "user_sign_in"
   delete "/sign_out" => "clearance/sessions#destroy", as: "sign_out"
   get "/sign_up" => "clearance/users#new", as: "sign_up"
 
@@ -21,7 +20,6 @@ Rails.application.routes.draw do
   post 'newTrip', to: 'trips#create'
 
   get 'trips/:id/send_itinerary' => 'trips#send_itinerary', as: :trips_send_itinerary
-
 
 
   root 'static_pages#home'
