@@ -8,22 +8,34 @@
     <% end %>
   </div>
 
-  <div class="container">
-    <% if @trip.tripitems.count > 0 %>
-      <% @trip.tripitems.each do |e| %>
-          <div class="container-fluid jumbotron">
+  <% if @trip.tripitems.count > 0 %>
+    <% @trip.tripitems.each do |e| %>
+        <% if e.id %>
+          <div class="container jumbotron">
             <h5><%= e.activity_name %> @ <a href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
             <h5><%= e.activity_time %></h5><br>
             <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5> <br>
-            <h5><strong>Sherpa Tip:</strong><%= e.sherpa_tip%></h5><br>
-            <h5><strong>Reservation:</strong><%= e.reservation%></h5><br>
+            <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
+            <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
+            <% if isCurrentAdminUser?(current_user) %>
+              <button class="btn-sherpa-primary button_link"><%= link_to 'Edit Trip Item', edit_tripitem_path(e)%></button>
+            <% end %>
           </div>
-      <% end %>
+        <% end %>
     <% end %>
-  </div>
 
-  <div class="container jumbotron">
-    <%= render 'shared/tripitem_form' %>
-  </div>
+  <% end %>
+
+  <% if isCurrentAdminUser?(current_user) %>
+    <div class="container jumbotron">
+      <%= render 'shared/tripitem_form'%>
+    </div>
+
+    <div class="container jumbotron center-block text-center">
+      <h2>Admin Options</h2>
+      <button class="btn-sherpa-primary button_link"><%= link_to 'Edit Trip Details', edit_trip_path(@trip)%></button>
+
+    </div>
+  <% end %>
 
 <!--</div>-->
