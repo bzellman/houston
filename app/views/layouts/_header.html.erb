@@ -13,9 +13,13 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <!--<li><a href="#">Log-In</a></li>-->
-          <li><a href="http://www.surveygizmo.com/s3/2500932/Sherpa">Get A Sherpa</a></li>
+          <li><%= link_to "Home", root_path%></li>
+          <% if signed_in? %>
+              <li><%= link_to "Sign out", sign_out_path, method: :delete %></li>
+          <% else %>
+              <li><%= link_to "Sign in", sign_in_path %></li>
+          <% end %>
+          <li><a href="http://surveygizmo.com/s3/2500932/Sherpa">Get A Sherpa</a></li>
         </ul>
       </div>
     </div>

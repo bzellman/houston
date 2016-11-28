@@ -1,13 +1,10 @@
 class SignupsController < ApplicationController
 
   def new
-    puts "NEW NEW"
   end
 
 
-
   def create
-
     add_email
   end
 
