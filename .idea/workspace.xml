@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c65337fe-cdf4-4c02-bfad-5628e211b697" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
     </list>
     <ignored path="top_of_the_mountain.iws" />
@@ -346,7 +345,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="SearchEverywhereHistoryKey" value="UsersHelper&#9;FILE&#9;file:///Users/bradZellman/Documents/Sherpa/Development/top_of_the_mountain/app/helpers/users_helper.rb&#10;def url_after_destroy&#9;null&#9;null" />
   </component>
-  <component name="RunManager" selected="Rails.Production: top_of_the_mountain">
+  <component name="RunManager" selected="Rails.Development: top_of_the_mountain">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -553,12 +552,12 @@
       <workItem from="1480116222531" duration="281000" />
       <workItem from="1480117042580" duration="1372000" />
       <workItem from="1480120092172" duration="43509000" />
-      <workItem from="1480342468747" duration="6735000" />
+      <workItem from="1480342468747" duration="7421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72349000" />
+    <option name="totallyTimeSpent" value="73035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
