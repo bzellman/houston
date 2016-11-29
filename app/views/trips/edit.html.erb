@@ -14,6 +14,12 @@
         <%= f.label :last_name %>
         <%= f.text_field :last_name, class: 'form-control' %></br> </br>
 
+        <%= f.label :client_email %>
+        <%= f.text_field :client_email, class: 'form-control' %></br> </br>
+
+        <%= f.label :client_phone %>
+        <%= f.text_field :client_phone, class: 'form-control' %></br> </br>
+
         <%= f.label :sherpa_owner %>
         <%= f.text_field :sherpa_owner, class: 'form-control' %></br> </br>
 
@@ -23,7 +29,9 @@
         <%= f.label :date_of_travel %>
         <%= f.date_select :date_of_travel, class: 'form-control' %></br> </br>
 
-        <%= f.submit "Create Trip", class:"btn btn-sherpa-primary" %>
+        <div class="center-block">
+          <%= f.submit "Create Trip", class:"btn btn-sherpa-primary" %>
+        </div>
     <% end %>
 
   </div>

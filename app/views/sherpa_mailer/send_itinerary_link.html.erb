@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Sherpa Itinerary</title>
+  <title>Title</title>
   <style>
     .wrapper {
       width: 100%; }
@@ -857,23 +857,22 @@
       Margin-bottom: 10px; }
 
     h1 {
-      font-size: 30px;
-      font-weight: bold; }
+      font-size: 34px; }
 
     h2 {
-      font-size: 20px; }
+      font-size: 30px; }
 
     h3 {
-      font-size: 24px; }
+      font-size: 28px; }
 
     h4 {
-      font-size: 18px; }
+      font-size: 24px; }
 
     h5 {
-      font-size: 16px; }
+      font-size: 20px; }
 
     h6 {
-      font-size: 12px; }
+      font-size: 18px; }
 
     body,
     table.body,
@@ -900,17 +899,17 @@
 
     small {
       font-size: 80%;
-      color: #2; }
+      color: #cacaca; }
 
     a {
-      color: #2199e8;
+      color: #03a9f4;
       text-decoration: none; }
     a:hover {
-      color: #147dc2; }
+      color: #03a9f4; }
     a:active {
-      color: #147dc2; }
+      color: #03a9f4; }
     a:visited {
-      color: #2199e8; }
+      color: #03a9f4; }
 
     h1 a,
     h1 a:visited,
@@ -924,7 +923,7 @@
     h5 a:visited,
     h6 a,
     h6 a:visited {
-      color: #2199e8; }
+      color: #03a9f4; }
 
     pre {
       background: #f3f3f3;
@@ -976,7 +975,9 @@
       margin: 0 0 16px 0;
       Margin: 0 0 16px 0; }
     table.button table td {
-      text-align: center;
+      text-align: left;
+      color: #fefefe;
+      background: #03a9f4;
       border: 2px solid #03a9f4; }
     table.button table td a {
       font-family: Helvetica, Arial, sans-serif;
@@ -986,10 +987,8 @@
       text-decoration: none;
       display: inline-block;
       padding: 8px 16px 8px 16px;
-      border: 0 solid orange;
-      border-radius: 25px;
-      background-color: #03a9f4;
-    }
+      border: 0 solid #03a9f4;
+      border-radius: 3px; }
     table.button.radius table td {
       border-radius: 3px;
       border: none; }
@@ -1047,13 +1046,13 @@
     table.button:hover table td,
     table.button:visited table td,
     table.button:active table td {
-      background: #147dc2;
+      background: #03a9f4;
       color: #fefefe; }
 
     table.button:hover table a,
     table.button:visited table a,
     table.button:active table a {
-      border: 0 solid #147dc2; }
+      border: 0 solid #03a9f4; }
 
     table.button.secondary table td {
       background: #777777;
@@ -1081,21 +1080,17 @@
       color: #fefefe; }
 
     table.button.success table td {
-      background: #03a9f4;
-      border-radius: 25px;
-      border: 0px solid #03a9f4; }
+      background: #3adb76;
+      border: 0px solid #3adb76; }
 
     table.button.success table a {
-      border-radius: 25px;
-      border: 0 solid #03a9f4; }
+      border: 0 solid #3adb76; }
 
     table.button.success:hover table td {
-      border-radius: 25px;
-      background: #03a9f4; }
+      background: #23bf5d; }
 
     table.button.success:hover table a {
-      border-radius: 25px;
-      border: 0 solid #03a9f4; }
+      border: 0 solid #23bf5d; }
 
     table.button.alert table td {
       background: #ec5840;
@@ -1173,7 +1168,7 @@
       padding-right: 10px; }
     table.menu td.menu-item a,
     table.menu th.menu-item a {
-      color: #2199e8; }
+      color: #03a9f4; }
 
     table.menu.vertical td.menu-item,
     table.menu.vertical th.menu-item {
@@ -1192,11 +1187,6 @@
 
     table.menu.text-center a {
       text-align: center; }
-
-    table.footer-button {
-      height: 250px;
-      width: 250px;
-    }
 
     .menu[align="center"] {
       width: auto !important; }
@@ -1404,7 +1394,7 @@
               <table class="row collapse">
                 <tbody>
                 <tr>
-                  <th class="small-12 large-12 columns first last" style="height: 150px;">
+                  <th class="small-12 large-12 columns first last">
                     <table>
                       <tr>
                         <th> <img src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/logo_large_black_right.png" alt=""> </th>
@@ -1463,128 +1453,92 @@
                     <table>
                       <tr>
                         <th>
+                          <br>
+                          <% @trip.tripitems.each do |e| %>
+                              <% if e.id %>
+                                  <h2 style="white-space: nowrap"><%= e.activity_name %> <br>&nbsp@<a style="display: inline" href="#<%= e.location_url %>"><h2><%= e.location_name %></h2></a></h2> <br>
+                                  <% date_for_foramt = e.activity_time %>
+                                  <h2><%= date_for_foramt.strftime("%A, %B %d, %Y - %I:%M %p") %> </h2>
+                                  <h2><a href="#<%= e.activity_address_url %>"><h2><%= e.activity_address %></h2></a></h5>
+                                    <h2><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h2><br>
+                                    <h2><strong>Reservation: </strong><%= e.reservation%></h2><br>
+                              <% end %>
+                          <% end %>
                           <center data-parsed="">
                             <table class="button success float-center">
                               <tr>
                                 <td>
                                   <table>
                                     <tr>
-                                      <br>
-                                      <% @trip.tripitems.each do |e| %>
-                                          <% if e.id %>
-                                              <h5><%= e.activity_name %> @ <a href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
-                                              <h5><%= e.activity_time %></h5><br>
-                                              <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5> <br>
-                                              <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
-                                              <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
-                                          <% end %>
-                                      <% end %>
+                                      <td><a href="#">Get smarter now &rarrtl;</a></td>
                                     </tr>
-                                    <tr>
-                                      <td><a href="#">Visit Sherpa!</a></td>
-                                    </tr>
-                                    <tr>
-                                      <!--                                               <h6 class="text-center"><strong><i>*If there are previous verison of this app on your device, we recommend you first uninstalling the app prior to installing the new test build.</i></strong></h6> -->
-                                    </tr>
-                                    <br>
                                   </table>
                                 </td>
                               </tr>
                             </table>
-                            <table>
+                          </center>
+                        </th>
+                        <th class="expander"></th>
+                      </tr>
+                    </table>
+                  </th>
+                </tr>
+                </tbody>
+              </table>
+              <table class="row collapsed footer">
+                <tbody>
+                <tr>
+                  <th class="small-12 large-12 columns first last">
+                    <table>
+                      <tr>
+                        <th>
+                          <table class="spacer">
+                            <tbody>
+                            <tr>
+                              <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          <p class="text-center">@copywrite nobody<br> <a href="#">hello@nocopywrite.com</a> | <a href="#">Manage Email Notifications</a> | <a href="#">Unsubscribe</a></p>
+                          <center data-parsed="">
+                            <table align="center" class="menu float-center">
                               <tr>
-                                <th>
-                                  <center data-parsed="">
-                                    <table class="button success float-center">
-                                    </table>
-                                    <table>
-                                      <tr>
-                                        <th>
-                                          <center data-parsed="">
-                                            <table class="button success float-center">
-                                              <tr>
-                                                <td>
-                                                  <table>
-                                                    <tr>
-                                                      <br>
-
-                                                    </tr>
-                                                  </table>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </center>
-                                        </th>
-                                        <th class="expander"></th>
-                                      </tr>
-                                    </table>
-                                </th>
-                              </tr>
-                              </tbody>
-                            </table>
-                            <table class="row collapsed footer">
-                              <tbody>
-                              <tr>
-                                <th class="small-12 large-12 columns first last">
+                                <td>
                                   <table>
                                     <tr>
-                                      <th>
-                                        <table class="spacer">
-                                          <tbody>
-                                          <tr>
-                                            <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-                                          </tr>
-                                          </tbody>
-                                        </table>
-                                        <!-- <h5 class="text-center"> <strong>If you have any problems, please contact your project manager by clicking on the link below or calling <br>512-732-0135 </strong></h5>
-                                        <p class="text-center"><a href="mailto:heather.mathieu@bar-z.com">Heather Mathieu</a> | <a href="mailto:brad.zellman@bar-z.com">Brad Zellman</a> | <a href="mailto:jon.martinez@bar-z.com">Jon Martinez</a> | <a href="mailto:sonita.haynes@bar-z.com">Sonita Haynes</a></p> -->
-                                        <center data-parsed="">
-                                          <table align="center" class="menu float-center">
-                                            <tr>
-                                              <td>
-                                                <table>
-                                                  <!-- <tr>
-                                                    <th class="menu-item float-center footer-button">
-                                                      <a href="undefined"><img src="https://s3.amazonaws.com/bar-z/marketingAssets/footer_facebook.png" alt=""></a>
-                                                    </th>
-                                                    <th class="menu-item float-center footer-button">
-                                                      <a href="undefined"><img src="https://s3.amazonaws.com/bar-z/marketingAssets/footer_twitter.png" alt=""></a>
-                                                    </th>
-                                                    <th class="menu-item float-center footer-button">
-                                                      <a href="undefined"><img src="https://s3.amazonaws.com/bar-z/marketingAssets/footer_linkedin.png" alt=""></a>
-                                                    </th>
-                                                    <th class="menu-item float-center footer-button">
-                                                      <a href="undefined"><img src="https://s3.amazonaws.com/bar-z/marketingAssets/footer_blogger.png" alt=""></a>
-                                                    </th>
-                                                  </tr> -->
-                                                </table>
-                                                <table>
-                                                  <tr>
-                                                    <h6>NOTICE: This email message, along with any attachments, is for the sole use of the intended recipient(s)
-                                                      and contains confidential and privileged information. Any unauthorized review, use, disclosure, or
-                                                      distribution of this message or the information contained therein is prohibited. If you are not the
-                                                      intended recipient, please contact the sender by reply email and destroy all copies of the original
-                                                      message. To contact our email administrator directly, send email to <a href="mailto:info@mylocalsherpa.com">info@mylocalsherpa.com</a>. Thank you.<br><br>
-                                                      </div>
-                                                    </h6>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </center>
+                                      <th class="menu-item float-center">
+                                        <a href="undefined"><img src="http://placehold.it/25/03a9f4" alt=""></a>
                                       </th>
-                                      <th class="expander"></th>
+                                      <th class="menu-item float-center">
+                                        <a href="undefined"><img src="http://placehold.it/25/03a9f4" alt=""></a>
+                                      </th>
+                                      <th class="menu-item float-center">
+                                        <a href="undefined"><img src="http://placehold.it/25/03a9f4" alt=""></a>
+                                      </th>
+                                      <th class="menu-item float-center">
+                                        <a href="undefined"><img src="http://placehold.it/25/03a9f4" alt=""></a>
+                                      </th>
+                                      <th class="menu-item float-center">
+                                        <a href="undefined"><img src="http://placehold.it/25/03a9f4" alt=""></a>
+                                      </th>
                                     </tr>
                                   </table>
-                                </th>
+                                </td>
                               </tr>
-                              </tbody>
                             </table>
-                        </td>
+                          </center>
+                        </th>
+                        <th class="expander"></th>
                       </tr>
-                      </tbody>
                     </table>
+                  </th>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          </tbody>
+        </table>
       </center>
     </td>
   </tr>
