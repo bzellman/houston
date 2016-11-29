@@ -4,7 +4,7 @@
 
   </div>
 
-  <div class="container-fluid jumbotron form-inline text-left">
+  <div class="container-fluid jumbotron form-horizontal sherpa-left-form">
 
     <%= form_for (@trip) do |f| %>
 
@@ -16,6 +16,12 @@
 
         <%= f.label :sherpa_owner %>
         <%= f.text_field :sherpa_owner, class: 'form-control' %></br> </br>
+
+        <%= f.label :client_email %>
+        <%= f.text_field :client_email, class: 'form-control' %></br> </br>
+
+        <%= f.label :client_phone %>
+        <%= f.text_field :client_phone, class: 'form-control' %></br> </br>
 
         <%= f.label :date_of_travel %>
         <%= f.date_select :date_of_travel, class: 'form-control' %></br> </br>

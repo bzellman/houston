@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161128052111) do
+ActiveRecord::Schema.define(version: 20161129030350) do
 
   create_table "signups", force: :cascade do |t|
     t.string   "email"
@@ -44,7 +44,9 @@ ActiveRecord::Schema.define(version: 20161128052111) do
     t.date     "date_of_travel"
     t.string   "client_email"
     t.string   "client_phone"
+    t.integer  "user_id"
     t.index ["tripitem_id"], name: "index_trips_on_tripitem_id"
+    t.index ["user_id"], name: "index_trips_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

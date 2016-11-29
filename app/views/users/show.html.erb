@@ -1,0 +1,14 @@
+<% if isCurrentAdminUser?(current_user) == false %>
+  <div class="container text-center center-block">
+    <h1>Welcom To Sherpa <%= current_user.first_name %></h1>
+    <h3>Please choose from an itinerary below to get more details</h3>
+  </div>
+<% end %>
+
+<% if isCurrentAdminUser?(current_user) %>
+    <div class="container text-center center-block">
+      <h1>Welcome <%= current_user.first_name %> </h1>
+      <h3>Please to create an itinerary, click the 'New Itinerary' button below<br>To edit an existing itinerary, find it in the list below.</h3>
+      <button class="btn-sherpa-primary button_link"><%= link_to 'Create New Itinerary', new_trip_path%></button>
+    </div>
+<% end %>

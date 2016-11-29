@@ -19,5 +19,6 @@ Rails.application.routes.draw do
   resources :signups
   resources :tripitems
   resources :trips
+  resources :users
 
 end
