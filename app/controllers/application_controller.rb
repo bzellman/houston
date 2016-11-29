@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
   include Clearance::Controller
-  include UsersHelper
+  include ::UsersHelper
   protect_from_forgery with: :exception
 end
