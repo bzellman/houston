@@ -33,7 +33,7 @@ class TripsController < ApplicationController
   def update
     @trip = Trip.find(params[:id])
     if @trip.update_attributes(trip_params)
-      flash[:success] = "Trip Updated"
+      # flash[:success] = "Trip Updated"
       redirect_to @trip
     else
       render 'edit'
@@ -51,7 +51,7 @@ class TripsController < ApplicationController
   private
 
   def trip_params
-    params.require(:trip).permit(:id, :first_name, :last_name, :trip_message, :sherpa_owner, :date_of_travel)
+    params.require(:trip).permit(:id, :first_name, :last_name, :trip_message, :sherpa_owner, :date_of_travel, :client_email, :client_phone)
   end
 
 end

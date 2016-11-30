@@ -1,7 +1,5 @@
-<!--<div class="container col-md-8 col-md-offset-2">-->
-  <div class="container ">
+ <div class="container ">
     <% if @trip != nil %>
-        <img src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/sherpa+Logo.png" class="logo_image">
         <p>Dear <%= @trip.first_name %>,</p>
         <p> <%= @trip.trip_message %></p>
         <p>Your Sherpa,<br><%= @trip.sherpa_owner %></p>
@@ -23,10 +21,10 @@
               </iframe>
             </div>
             <div class="col-md-8 center-block text-left">
-              <h2 style="white-space: nowrap"><%= e.activity_name %>@&nbsp<a style="display: inline" href="#<%= e.location_url %>"><h4><%= e.location_name %></h4></a></h2> <br>
+              <h2 style="white-space: nowrap"><%= e.activity_name %>@<a style="display: inline" href="<%= e.location_url %>"><h4><%= e.location_name %></h4></a></h2> <br>
               <% date_for_foramt = e.activity_time %>
             <h5><%= date_for_foramt.strftime("%A, %B %d, %Y - %I:%M %p") %> </h5>
-            <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5>
+            <a href="http://maps.google.com/?q=<%= e.activity_address %>"><h5><%= e.activity_address %></h5></a>
             <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
             <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
             <% if isCurrentAdminUser?(current_user) %>
@@ -54,5 +52,3 @@
 
     </div>
   <% end %>
-
-<!--</div>-->

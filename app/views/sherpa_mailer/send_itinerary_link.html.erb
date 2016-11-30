@@ -1460,14 +1460,14 @@
                           <br>
                           <% @trip.tripitems.each do |e| %>
                               <% if e.id %>
-                                  <span style="white-space:nowrap;"><h5><strong><%= e.activity_name %></strong>@ <a href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5></span>
+                                  <span style="white-space:nowrap;"><h5><strong><%= e.activity_name %></strong>@ <a href="<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5></span>
                                   <% date_for_foramt = e.activity_time %>
                                   <h5><%= date_for_foramt.strftime("%A, %B %d, %Y") %> </h5>
                                   <h5><%= date_for_foramt.strftime("%I:%M %p") %> </h5>
-                                  <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5>
+                                  <a href="http://maps.google.com/?q=<%= e.activity_address %>"><h5><%= e.activity_address %></h5></a>
                                   <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
                                   <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
-                                  <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=15&size=144x144&scale=2&markers=size:small%7Ccolor:blue%7Clabel:2%7C<%= e.activity_address %>&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:144px; height:144px;"><br><br>
+                                  <a href="http://maps.google.com/?q=<%= e.activity_address %>"><img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=15&size=144x144&scale=2&markers=size:small%7Ccolor:blue%7Clabel:2%7C<%= e.activity_address %>&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:144px; height:144px;"></a><br><br>
                               <% end %>
                           <% end %>
                           <center data-parsed="">
