@@ -1080,17 +1080,17 @@
       color: #fefefe; }
 
     table.button.success table td {
-      background: #3adb76;
-      border: 0px solid #3adb76; }
+      background: #03a9f4;
+      border: 0px solid #03a9f4; }
 
     table.button.success table a {
-      border: 0 solid #3adb76; }
+      border: 0 solid #03a9f4; }
 
     table.button.success:hover table td {
-      background: #23bf5d; }
+      background: #03a9f4; }
 
     table.button.success:hover table a {
-      border: 0 solid #23bf5d; }
+      border: 0 solid #03a9f4; }
 
     table.button.alert table td {
       background: #ec5840;
@@ -1457,7 +1457,7 @@
                           <% @trip.tripitems.each do |e| %>
                               <% if e.id %>
                                   <div class="itinerary-map">
-                                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=14&size=400x400&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:120px; height:120px;">
+                                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=17&size=400x400&markers=color:#03a9f4&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:120px; height:120px;">
 
 
                                     </iframe>
