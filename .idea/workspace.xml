@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c65337fe-cdf4-4c02-bfad-5628e211b697" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb" afterPath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb" afterPath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb" />
     </list>
     <ignored path="top_of_the_mountain.iws" />
@@ -39,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="22" column="23" selection-start-line="16" selection-start-column="14" selection-end-line="22" selection-end-column="23" />
+              <caret line="30" column="74" selection-start-line="25" selection-start-column="14" selection-end-line="30" selection-end-column="74" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -62,8 +61,8 @@
       <file leaf-file-name="send_itinerary.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="1483" column="52" selection-start-line="1474" selection-start-column="44" selection-end-line="1483" selection-end-column="52" />
+            <state relative-caret-position="293">
+              <caret line="1486" column="41" selection-start-line="1486" selection-start-column="41" selection-end-line="1486" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#33331#33337#1#HTML" expanded="true" />
@@ -83,8 +82,8 @@
       <file leaf-file-name="send_itinerary_link.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3245">
-              <caret line="1458" column="59" selection-start-line="1458" selection-start-column="46" selection-end-line="1458" selection-end-column="59" />
+            <state relative-caret-position="185">
+              <caret line="1468" column="189" selection-start-line="1468" selection-start-column="189" selection-end-line="1468" selection-end-column="189" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#33128#33134#1#HTML" expanded="true" />
@@ -94,8 +93,10 @@
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#34665#34671#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#1;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#h5#0;n#div#1;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#4;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#38223#38229#1#HTML" expanded="true" />
+                <element signature="e#38475#38481#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -526,12 +527,12 @@
       <workItem from="1480116222531" duration="281000" />
       <workItem from="1480117042580" duration="1372000" />
       <workItem from="1480120092172" duration="43509000" />
-      <workItem from="1480342468747" duration="19036000" />
+      <workItem from="1480342468747" duration="19294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84650000" />
+    <option name="totallyTimeSpent" value="84908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -948,14 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -988,10 +981,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="30" column="74" selection-start-line="25" selection-start-column="14" selection-end-line="30" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h2#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="1483" column="52" selection-start-line="1474" selection-start-column="44" selection-end-line="1483" selection-end-column="52" />
+        <state relative-caret-position="293">
+          <caret line="1486" column="41" selection-start-line="1486" selection-start-column="41" selection-end-line="1486" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#33331#33337#1#HTML" expanded="true" />
@@ -1007,22 +1020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="22" column="23" selection-start-line="16" selection-start-column="14" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h2#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3245">
-          <caret line="1458" column="59" selection-start-line="1458" selection-start-column="46" selection-end-line="1458" selection-end-column="59" />
+        <state relative-caret-position="185">
+          <caret line="1468" column="189" selection-start-line="1468" selection-start-column="189" selection-end-line="1468" selection-end-column="189" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#33128#33134#1#HTML" expanded="true" />
@@ -1032,8 +1033,10 @@
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#34665#34671#1#HTML" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#1;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h5#0;n#div#1;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#4;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#38223#38229#1#HTML" expanded="true" />
+            <element signature="e#38475#38481#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

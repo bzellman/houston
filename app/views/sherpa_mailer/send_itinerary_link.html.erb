@@ -1458,15 +1458,18 @@
                               <% if e.id %>
                                   <div class="itinerary-map">
                                     <iframe
+                                    width="300"
+                                    height="300"
                                     frameborder="0" style="border:0"
                                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANV0kz7btLoCUc5yw7ndz_BqbHWkVtXjU
     &q=<%= e.activity_address %>" allowfullscreen>
                                     </iframe>
                                   </div>
                                   <div class="itinerary-body">
-                                    <h5><%= e.activity_name %> @ <a href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
-                                    <h5><%= e.activity_time %></h5><br>
-                                    <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5> <br>
+                                    <h5 style="white-space: nowrap"><%= e.activity_name %>@<a style="display: inline" href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
+                                    <% date_for_foramt = e.activity_time %>
+                                    <h5><%= date_for_foramt.strftime("%A, %B %d, %Y - %I:%M %p") %> </h5>
+                                    <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5>
                                     <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
                                     <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
                                   </div>
