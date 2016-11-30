@@ -61,8 +61,8 @@
       <file leaf-file-name="send_itinerary.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="1480" column="31" selection-start-line="1480" selection-start-column="31" selection-end-line="1480" selection-end-column="31" />
+            <state relative-caret-position="173">
+              <caret line="1370" column="9" selection-start-line="1370" selection-start-column="9" selection-end-line="1370" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#33331#33337#1#HTML" expanded="true" />
@@ -82,19 +82,19 @@
       <file leaf-file-name="send_itinerary_link.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="1462" column="115" selection-start-line="1462" selection-start-column="115" selection-end-line="1462" selection-end-column="115" />
+            <state relative-caret-position="182">
+              <caret line="853" column="21" selection-start-line="853" selection-start-column="21" selection-end-line="853" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#33177#33183#1#HTML" expanded="true" />
+                <element signature="e#33173#33179#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#34263#34269#1#HTML" expanded="true" />
+                <element signature="e#34259#34265#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#34721#34727#1#HTML" expanded="true" />
+                <element signature="e#34717#34723#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#4;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#38359#38365#1#HTML" expanded="true" />
+                <element signature="e#38355#38361#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -579,12 +579,12 @@
       <workItem from="1480116222531" duration="281000" />
       <workItem from="1480117042580" duration="1372000" />
       <workItem from="1480120092172" duration="43509000" />
-      <workItem from="1480342468747" duration="22747000" />
+      <workItem from="1480342468747" duration="22993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88361000" />
+    <option name="totallyTimeSpent" value="88607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1057,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="1480" column="31" selection-start-line="1480" selection-start-column="31" selection-end-line="1480" selection-end-column="31" />
+        <state relative-caret-position="173">
+          <caret line="1370" column="9" selection-start-line="1370" selection-start-column="9" selection-end-line="1370" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#33331#33337#1#HTML" expanded="true" />
@@ -1076,19 +1076,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="1462" column="115" selection-start-line="1462" selection-start-column="115" selection-end-line="1462" selection-end-column="115" />
+        <state relative-caret-position="182">
+          <caret line="853" column="21" selection-start-line="853" selection-start-column="21" selection-end-line="853" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#33177#33183#1#HTML" expanded="true" />
+            <element signature="e#33173#33179#1#HTML" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34263#34269#1#HTML" expanded="true" />
+            <element signature="e#34259#34265#1#HTML" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34721#34727#1#HTML" expanded="true" />
+            <element signature="e#34717#34723#1#HTML" expanded="true" />
             <element signature="n#style#0;n#span#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#3;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#th#0;n#tr#0;n#table#0;n#th#0;n#tr#0;n#tbody#0;n#table#4;n#td#0;n#tr#0;n#tbody#0;n#table#2;n#center#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#38359#38365#1#HTML" expanded="true" />
+            <element signature="e#38355#38361#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
