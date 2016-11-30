@@ -1444,7 +1444,7 @@
                       <tr>
                         <th>
                           <h1 class="text-center">Your Itinerary Is Ready!</h1>
-                          <h2 class="text-center">Thank You for Choosing Sherpa.</h2>
+                          <h2 class="text-center">Thank You for Choosing <span class="home-color">Sherpa</span></h2>
                         </th>
                         <th class="expander"></th>
                       </tr>
@@ -1466,7 +1466,7 @@
                               <% if e.id %>
                                   <h5 style="white-space: nowrap"><%= e.activity_name %>@<a style="display: inline" href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
                                   <% date_for_foramt = e.activity_time %>
-                                  <h5><%= date_for_foramt.strftime("%A, %B %d, %Y \n- %I:%M %p") %> </h5>
+                                  <h5><%= date_for_foramt.strftime("%A, %B %d, %Y \n %I:%M %p") %> </h5>
                                   <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5>
                                   <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
                                   <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
