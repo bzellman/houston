@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c65337fe-cdf4-4c02-bfad-5628e211b697" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/trips_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/trip.rb" afterPath="$PROJECT_DIR$/app/models/trip.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_tripitem_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_tripitem_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb" afterPath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb" afterPath="$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tripitems/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/tripitems/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/show.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/show.html.erb" />
     </list>
     <ignored path="top_of_the_mountain.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +47,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="60">
+              <caret line="4" column="56" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="56" />
               <folding>
                 <element signature="e#502#518#0#HTML" expanded="true" />
                 <element signature="e#795#822#0#HTML" expanded="true" />
@@ -67,8 +61,8 @@
       <file leaf-file-name="send_itinerary_link.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="1469" column="95" selection-start-line="1469" selection-start-column="95" selection-end-line="1469" selection-end-column="95" />
+            <state relative-caret-position="90">
+              <caret line="865" column="19" selection-start-line="865" selection-start-column="19" selection-end-line="865" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -517,12 +511,12 @@
       <workItem from="1480116222531" duration="281000" />
       <workItem from="1480117042580" duration="1372000" />
       <workItem from="1480120092172" duration="43509000" />
-      <workItem from="1480342468747" duration="24956000" />
+      <workItem from="1480342468747" duration="25487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90570000" />
+    <option name="totallyTimeSpent" value="91101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1003,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="60">
+          <caret line="4" column="56" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="56" />
           <folding>
             <element signature="e#502#518#0#HTML" expanded="true" />
             <element signature="e#795#822#0#HTML" expanded="true" />
@@ -1015,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sherpa_mailer/send_itinerary_link.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="1469" column="95" selection-start-line="1469" selection-start-column="95" selection-end-line="1469" selection-end-column="95" />
+        <state relative-caret-position="90">
+          <caret line="865" column="19" selection-start-line="865" selection-start-column="19" selection-end-line="865" selection-end-column="19" />
           <folding />
         </state>
       </provider>
