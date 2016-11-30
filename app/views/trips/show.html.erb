@@ -23,7 +23,7 @@
               </iframe>
             </div>
             <div class="col-md-8 center-block text-left">
-              <h2 style="white-space: nowrap"><%= e.activity_name %> <br>&nbsp@<a style="display: inline" href="#<%= e.location_url %>"><h4><%= e.location_name %></h4></a></h2> <br>
+              <h2 style="white-space: nowrap"><%= e.activity_name %>@&nbsp<a style="display: inline" href="#<%= e.location_url %>"><h4><%= e.location_name %></h4></a></h2> <br>
               <% date_for_foramt = e.activity_time %>
             <h5><%= date_for_foramt.strftime("%A, %B %d, %Y - %I:%M %p") %> </h5>
             <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5>
