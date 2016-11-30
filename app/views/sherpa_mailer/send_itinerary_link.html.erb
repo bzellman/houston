@@ -1457,12 +1457,9 @@
                           <% @trip.tripitems.each do |e| %>
                               <% if e.id %>
                                   <div class="itinerary-map">
-                                    <iframe
-                                    width="300"
-                                    height="300"
-                                    frameborder="0" style="border:0"
-                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANV0kz7btLoCUc5yw7ndz_BqbHWkVtXjU
-    &q=<%= e.activity_address %>" allowfullscreen>
+                                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=14&size=400x400&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:120px; height:120px;">
+
+
                                     </iframe>
                                   </div>
                                   <div class="itinerary-body">
