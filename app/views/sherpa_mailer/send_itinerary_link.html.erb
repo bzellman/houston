@@ -1355,12 +1355,8 @@
       table.button.small-expanded center {
         min-width: 0; } }
 
-    .itinerary-map{
-
-    }
-
-    .itinerary-body{
-
+    .home-color{
+      color:#03a9f4;
     }
 
   </style>
@@ -1428,7 +1424,7 @@
                 </tr>
                 </tbody>
               </table>
-              <center data-parsed=""> <img src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/apple_144.png" alt="" align="center" class="float-center" style="width:120px; height:120px;"> </center>
+              <!--<center data-parsed=""> <img src="https://s3-us-west-2.amazonaws.com/topofthemontain/images/apple_144.png" alt="" align="center" class="float-center" style="width:120px; height:120px;"> </center>-->
               <table class="spacer">
                 <tbody>
                 <tr>
@@ -1443,7 +1439,7 @@
                     <table>
                       <tr>
                         <th>
-                          <h1 class="text-center">Your Itinerary Is Ready!</h1>
+                          <h1 class="text-center"><strong>Your Itinerary Is Ready!</strong></h1>
                           <h2 class="text-center">Thank You for Choosing <span class="home-color">Sherpa</span></h2>
                         </th>
                         <th class="expander"></th>
@@ -1464,13 +1460,14 @@
                           <br>
                           <% @trip.tripitems.each do |e| %>
                               <% if e.id %>
-                                  <h5 style="white-space: nowrap"><%= e.activity_name %>@<a style="display: inline" href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
+                                  <span style="white-space:nowrap;"><h5 style="white-space: nowrap"><%= e.activity_name %>@ <a style="display: inline" href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5></span>
                                   <% date_for_foramt = e.activity_time %>
-                                  <h5><%= date_for_foramt.strftime("%A, %B %d, %Y \n %I:%M %p") %> </h5>
+                                  <h5><%= date_for_foramt.strftime("%A, %B %d, %Y") %> </h5>
+                                  <h5><%= date_for_foramt.strftime("%I:%M %p") %> </h5>
                                   <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5>
                                   <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
                                   <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
-                                  <center data-parsed=""> <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=15&size=144x144&scale=2&markers=size:small%7Ccolor:blue%7Clabel:2%7C<%= e.activity_address %>&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:144px; height:144px;"></center>
+                                  <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= e.activity_address %>&zoom=15&size=144x144&scale=2&markers=size:small%7Ccolor:blue%7Clabel:2%7C<%= e.activity_address %>&key=AIzaSyDlBhT5uaAlY1hFW6fFgGJK2xxJ_VAhxbs" alt="" align="center" class="float-center" style="width:144px; height:144px;">
                               <% end %>
                           <% end %>
                           <center data-parsed="">
