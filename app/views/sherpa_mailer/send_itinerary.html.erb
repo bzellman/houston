@@ -857,7 +857,7 @@
       Margin-bottom: 10px; }
 
     h1 {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: bold; }
 
     h2 {
@@ -1445,7 +1445,7 @@
                     <table>
                       <tr>
                         <th>
-                          <h1 class="text-center">Your Itinerary Is Ready!</h1>
+                          <h1 class="text-center"><strong>Your Itinerary Is Ready!</strong></h1>
                           <h2 class="text-center">Thank You for Choosing Sherpa.</h2>
                         </th>
                         <th class="expander"></th>
@@ -1472,11 +1472,16 @@
                                       <br>
                                       <% @trip.tripitems.each do |e| %>
                                           <% if e.id %>
-                                              <h5><%= e.activity_name %> @ <a href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
-                                              <h5><%= e.activity_time %></h5><br>
-                                              <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5> <br>
-                                              <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
-                                              <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
+                                              <div class="itinerary-map">
+
+                                              </div>
+                                              <div class="itinerary-body">
+                                                <h5><%= e.activity_name %> @ <a href="#<%= e.location_url %>"><h5><%= e.location_name %></h5></a></h5> <br>
+                                                <h5><%= e.activity_time %></h5><br>
+                                                <h5><a href="#<%= e.activity_address_url %>"><h5><%= e.activity_address %></h5></a></h5> <br>
+                                                <h5><strong>Sherpa Tip: </strong><%= e.sherpa_tip%></h5><br>
+                                                <h5><strong>Reservation: </strong><%= e.reservation%></h5><br>
+                                              </div>
                                           <% end %>
                                       <% end %>
                                     </tr>
