@@ -7,7 +7,6 @@ class SherpaMailer < ApplicationMailer
   #
   def send_itinerary_link(trip)
     @trip = trip
-    @greeting = "Hi"
     mail to: @trip.client_email
   end
 

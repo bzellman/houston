@@ -33,8 +33,11 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gibbon'
 #Use Bootstrap for Bootstrap implimentation
 gem 'bootstrap-sass', '3.3.6'
-#Use clearance for Bootstrap implimentation
+#Use clearance for Auth solution
 gem 'clearance'
+
+#Use Twilio for SMS integration
+gem 'twilio-ruby'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

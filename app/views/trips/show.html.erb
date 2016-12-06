@@ -21,7 +21,7 @@
               </iframe>
             </div>
             <div class="col-md-8 center-block text-left">
-              <h2 style="white-space: nowrap"><%= e.activity_name %>@<a style="display: inline" href="<%= e.location_url %>"><h4><%= e.location_name %></h4></a></h2> <br>
+              <h2 style="display: inline"><%= e.activity_name %> @ </h2> <a style="display: inline" href="<%= e.location_url %>"><h2 style="display: inline"><%= e.location_name %></h2></a> <br>
               <% date_for_foramt = e.activity_time %>
             <h5><%= date_for_foramt.strftime("%A, %B %d, %Y - %I:%M %p") %> </h5>
             <a href="http://maps.google.com/?q=<%= e.activity_address %>"><h5><%= e.activity_address %></h5></a>
@@ -30,6 +30,7 @@
             <% if isCurrentAdminUser?(current_user) %>
               <div class="text-center">
                 <button class="btn-sherpa-primary button_link"><%= link_to 'Edit Trip Item', edit_tripitem_path(e)%></button>
+                <button class="btn-sherpa-primary button_link"><%= link_to 'Delete Trip Item', edit_tripitem_path(e)%></button>
               </div>
             <% end %>
           </div>
@@ -48,7 +49,8 @@
     <div class="container jumbotron center-block text-center">
       <h2>Admin Options</h2>
       <button class="btn-sherpa-primary button_link"><%= link_to 'Edit Trip Details', edit_trip_path(@trip)%></button>
-      <button class="btn-sherpa-primary button_link"><%= link_to 'Send Itinerary', trips_send_itinerary_path(:id => @trip.id)%></button>
+      <button class="btn-sherpa-primary button_link"><%= link_to 'EMAIL Itinerary', trips_send_itinerary_path(:id => @trip.id), remote: true%></button>
+      <button class="btn-sherpa-primary button_link"><%= link_to 'SMS Itinerary', trips_send_itineraty_sms_path(:id => @trip.id), remote: true%></button>
 
     </div>
   <% end %>

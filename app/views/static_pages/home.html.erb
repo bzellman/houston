@@ -16,7 +16,7 @@
 
           <%= form_for(@signup, signup: newSignUp_path, remote: true) do |f| %>
               <%= f.text_field :email, class: 'form-control', placeholder: 'Enter Your Email Address'%><br>
-              <%= f.submit 'Sign Up For Early Access', class: 'btn btn-sherpa-primary' %>
+              <%= f.submit 'Sign Up For Early Access', :onclick => 'alert("Thank You for your interest in Sherpa! Shortly, you\'ll receive an email explaining how to take advantage of our Early Access program")', class: 'btn btn-sherpa-primary'%>
           <% end %>
         </div>
       </div>

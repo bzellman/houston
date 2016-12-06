@@ -32,6 +32,10 @@ $main-font-grey: #797979;
   background-color: $sherpa-blue;
 }
 
+html,body{
+  height: 100%
+}
+
 /** navbar **/
 .navbar{
   height: auto !important;
@@ -265,4 +269,3 @@ h4 {
   color: white;
 
 }
-

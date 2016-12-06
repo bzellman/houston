@@ -1,4 +1,5 @@
 class TripsController < ApplicationController
+  require 'twilio-ruby'
 
   before_action :require_login, only: [:new, :create, :index, :edit, :update]
 
@@ -47,11 +48,31 @@ class TripsController < ApplicationController
     SherpaMailer.send_itinerary_link(trip).deliver_now
   end
 
+  def send_itineraty_sms
+    trip = Trip.find(params[:id])
+    number_to_send_to = trip.client_phone
+
+    account_sid = "AC8b4751fdddf904ab0811f965be01c6e1"
+    auth_token = "4b758008706f2551cb1ed2294dbe178d"
+    twilio_phone_number = "15125807287"
+
+    @client = Twilio::REST::Client.new account_sid, auth_token
+
+    @client.account.messages.create({
+                                        from: "+1#{twilio_phone_number}",
+                                        to: "+1#{number_to_send_to}",
+                                        body: "FUN HAS ARRIVED #{trip_url(trip)}",
+                                    })
+    puts 'Message SENT'
+  end
+
 
   private
 
   def trip_params
     params.require(:trip).permit(:id, :first_name, :last_name, :trip_message, :sherpa_owner, :date_of_travel, :client_email, :client_phone)
   end
+
+
 
 end

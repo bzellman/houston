@@ -25,6 +25,10 @@ class TripitemsController < ApplicationController
     end
   end
 
+  def destroy
+
+  end
+
 
   private
 

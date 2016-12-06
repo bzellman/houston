@@ -1,6 +1,7 @@
 class SignupsController < ApplicationController
 
   def new
+    @signup = Signup.new
   end
 
 
@@ -16,7 +17,9 @@ class SignupsController < ApplicationController
     email = @email.to_s
     gibbon = Gibbon::Request.new(api_key: '0fce4dbfcd933ca8ae2d4ec206b09b36-us13')
     gibbon.lists("4f60a0f81b").members.create(body: {email_address: email, status: "subscribed", merge_fields: {FNAME: "", LNAME: ""}})
-    puts 'PUTS ADDED'
+    render :html => "<script>alert()</script>".html_safe
   end
 
 end
+
+
