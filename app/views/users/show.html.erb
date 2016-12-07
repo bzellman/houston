@@ -1,5 +1,6 @@
 <% if isCurrentAdminUser?(current_user) == false %>
   <div class="container text-center center-block">
+    <% puts current_user.email %>
     <h1>Welcom To Sherpa <%= current_user.first_name %></h1>
     <h3>Please choose from an itinerary below to get more details</h3>
   </div>
@@ -7,16 +8,34 @@
 
 <% if isCurrentAdminUser?(current_user) %>
     <div class="cont1ainer text-center center-block">
-      <div class="col-sm-12">
-        <h1>Welcome <%= current_user.first_name %> </h1>
+
+      <div class="row">
+        <div class="container col-sm-12 col-md-6 col-md-offset-3 text-center jumbotron">
+          <h3>Please to create an itinerary, click the 'New Itinerary' button below<br>To edit an existing itinerary, find it in the list below.</h3>
+          <button class="btn-sherpa-primary button_link"><%= link_to 'Create New Itinerary', new_trip_path%></button>
+        </div>
       </div>
-      <div class="container col-sm-12 col-md-6 jumbotron">
-        <h3>Please to create an itinerary, click the 'New Itinerary' button below<br>To edit an existing itinerary, find it in the list below.</h3>
-        <button class="btn-sherpa-primary button_link"><%= link_to 'Create New Itinerary', new_trip_path%></button>
+
+      <div class="row">
+        <div class="container col-sm-12 col-md-6 col-md-offset-3 text-center jumbotron">
+          <h3>Add New User</h3>
+          <button class="btn-sherpa-primary button_link"><%= link_to 'Add A New User', sign_up_path %></button>
+        </div>
       </div>
-      <div class="container col-sm-12 col-md-6 jumbotron">
-        <h3>Add New User</h3>
-        <button class="btn-sherpa-primary button_link"><%= link_to 'Create New Itinerary', new_user_path%></button>
+
+      <div class="container col-sm-12 col-md-6 col-md-offset-3 text-center jumbotron">
+        <%= form_for(:users, :url => new_user_path, :method => :post) do |f| %>
+
+            <%= f.text_field :email, class: 'form-control'%><br>
+
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'form-control'%><br>
+
+            <%= f.submit 'Sign Up', class: 'btn btn-primary' %>
+
+        <% end %>
       </div>
+
+
     </div>
 <% end %>

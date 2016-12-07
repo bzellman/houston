@@ -26,7 +26,9 @@ class TripitemsController < ApplicationController
   end
 
   def destroy
-
+    @tripitem = Tripitem.find(params[:id])
+    @tripitem.destroy
+    redirect_to request.referrer || root_url
   end
 
 

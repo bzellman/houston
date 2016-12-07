@@ -4,7 +4,7 @@
 </div>
 
 <div class="container jumbotron text-center center-block">
-  <%= form_for(@user, user: sign_up_path) do |f| %>
+  <%= form_for @user do |f| %>
 
       <%= f.label :email %>
       <%= f.text_field :email, class: 'form-control'%><br>

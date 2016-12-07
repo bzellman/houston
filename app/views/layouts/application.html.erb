@@ -20,10 +20,15 @@
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
-<header>
-  <%= render 'layouts/header' %>
-</header>
-<%= yield %>
-  <%= render 'layouts/footer' %>
+<div id="wrap">
+  <div id="main">
+    <header>
+      <%= render 'layouts/header' %>
+    </header>
+    <%= yield %>
+  </div>
+</div>
+<%= render 'layouts/footer' %>
+
 </body>
 </html>
