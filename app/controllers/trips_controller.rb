@@ -54,7 +54,7 @@ class TripsController < ApplicationController
 
     account_sid = "AC8b4751fdddf904ab0811f965be01c6e1"
     auth_token = "4b758008706f2551cb1ed2294dbe178d"
-    twilio_phone_number = "15125807287"
+    twilio_phone_number = "15125807780"
 
     @client = Twilio::REST::Client.new account_sid, auth_token
 
