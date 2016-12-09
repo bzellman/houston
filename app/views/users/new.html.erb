@@ -12,7 +12,18 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control'%><br>
 
-      <%= f.submit 'Sign Up', class: 'btn btn-primary' %>
+      <% if isCurrentAdminUser?(current_user) %>
+          <%= f.radio_button :user_type, 'regular', :checked => true %>
+          <%= label :user_type_admin, 'regular' %>
+          <%= f.radio_button :user_type, 'sherpa' %>
+          <%= label :user_type_sherpa, 'sherpa' %>
+          <%= f.radio_button :user_type, 'admin' %>
+          <%= label :user_type_super_admin, 'admin' %>
+      <% else %>
+          <%= f.hidden_field :user_type, :value => 'regular' %>
+      <% end %>
+
+      <br><%= f.submit 'Sign Up', class: 'btn btn-sherpa-primary' %>
 
   <% end %>
 </div>

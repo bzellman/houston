@@ -1,4 +1,4 @@
 Clearance.configure do |config|
-  config.routes = true
-  config.mailer_sender = "reply@example.com"
+  config.routes = false
+  config.mailer_sender = "info@mylocalsherpa.com"
 end

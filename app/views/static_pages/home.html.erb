@@ -16,7 +16,7 @@
 
           <%= form_for(@signup, signup: newSignUp_path, remote: true) do |f| %>
               <%= f.text_field :email, class: 'form-control', placeholder: 'Enter Your Email Address'%><br>
-              <%= f.submit 'Sign Up For Early Access', :onclick => 'alert("Thank You for your interest in Sherpa! We\'ll be intouch shortly!")', class: 'btn btn-sherpa-primary'%>
+              <%= f.submit 'Sign Up For Early Access', :onclick => 'alert("Thank You for your interest in Sherpa! We\'ll be intouch shortly!")', class: 'btn btn-sherpa-primary btn-sherpa-home'%>
           <% end %>
         </div>
       </div>
@@ -85,7 +85,7 @@
     </div>
       <div class="get-button">
         <form action="http://www.surveygizmo.com/s3/2500932/Sherpa">
-          <input class="btn btn-sherpa-primary" type="submit" value="START AN ADVENTURE" />
+          <input class="btn btn-sherpa-primary btn-sherpa-home" type="submit" value="START AN ADVENTURE" />
         </form>
       </div>
     </div>
