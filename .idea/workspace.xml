@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c65337fe-cdf4-4c02-bfad-5628e211b697" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/trips_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/trip.rb" afterPath="$PROJECT_DIR$/app/models/trip.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161210205034_change_integer_limit_in_your_table.rb" afterPath="$PROJECT_DIR$/db/migrate/20161210205034_change_integer_limit_in_your_table.rb" />
     </list>
     <ignored path="top_of_the_mountain.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trip.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trip.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/trip.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="150">
+              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20161210205034_change_integer_limit_in_your_table.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="20161210205034_change_integer_limit_in_your_table.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20161210205034_change_integer_limit_in_your_table.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -179,7 +177,6 @@
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20161129030350_add_user_reference_to_trip.rb" />
-        <option value="$PROJECT_DIR$/app/models/trip.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" />
@@ -188,6 +185,7 @@
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20161210205034_change_integer_limit_in_your_table.rb" />
+        <option value="$PROJECT_DIR$/app/models/trip.rb" />
       </list>
     </option>
   </component>
@@ -610,12 +608,12 @@
       <workItem from="1480116222531" duration="281000" />
       <workItem from="1480117042580" duration="1372000" />
       <workItem from="1480120092172" duration="43509000" />
-      <workItem from="1480342468747" duration="96391000" />
+      <workItem from="1480342468747" duration="97070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162005000" />
+    <option name="totallyTimeSpent" value="162684000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1087,14 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/trip.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20161128052111_add_more_details_to_trip.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1107,6 +1097,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/trip.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
           <folding />
         </state>
       </provider>
