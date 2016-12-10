@@ -44,24 +44,6 @@ class UsersController < Clearance::BaseController
     end
 
 
-    # if current_user.user_type != 'admin' or current_user == nil
-    #   if @user.save
-    #     sign_in @user
-    #     redirect_back_or url_after_create
-    #   else
-    #     render template: "users/new"
-    #   end
-    # else
-    #   if @user.save
-    #     new
-    #     puts "New User Saved"
-    #     @user = nil
-    #   else
-    #     render template: "users/new"
-    #   end
-    #
-    # end
-
   end
 
   private

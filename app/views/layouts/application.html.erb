@@ -14,9 +14,6 @@
   <link rel="apple-touch-icon" sizes="114x114" href="https://s3-us-west-2.amazonaws.com/topofthemontain/images/apple_114.png" />
   <link rel="apple-touch-icon" sizes="144x144" href="ahttps://s3-us-west-2.amazonaws.com/topofthemontain/images/apple_144.png" />
 
-
-
-
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
@@ -25,10 +22,13 @@
     <header>
       <%= render 'layouts/header' %>
     </header>
+    <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
     <%= yield %>
   </div>
 </div>
 <%= render 'layouts/footer' %>
-
+<%= debug(params) if Rails.env.development? %>
 </body>
 </html>

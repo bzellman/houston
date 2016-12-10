@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161129030350) do
+ActiveRecord::Schema.define(version: 20161210205034) do
 
   create_table "signups", force: :cascade do |t|
     t.string   "email"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20161129030350) do
     t.string   "client_email"
     t.string   "client_phone"
     t.integer  "user_id"
+    t.index ["id"], name: "sqlite_autoindex_trips_1", unique: true
     t.index ["tripitem_id"], name: "index_trips_on_tripitem_id"
     t.index ["user_id"], name: "index_trips_on_user_id"
   end
