@@ -18,10 +18,9 @@ class UsersController < Clearance::BaseController
 
   def create
     @user = user_from_params
-    @current_user = current_user
-    puts @current_user.name
-    puts @current_user.user_type
-    if @current_user.user_type != 'admin'
+
+
+    if current_user.user_type != 'admin' || current_user = nil
       if @user.save
         sign_in @user
         redirect_back_or url_after_create
