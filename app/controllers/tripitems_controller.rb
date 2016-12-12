@@ -3,7 +3,7 @@ class TripitemsController < ApplicationController
   def create
     @tripitem = Tripitem.new(trip_item_params)
     if @tripitem.save
-      flash[:success] = "You did it Brad"
+      flash[:success] = "Trip Item Added"
       redirect_to request.referrer || root_url
     else
       flash[:danger] = "The Trip Item Was Not Created"
