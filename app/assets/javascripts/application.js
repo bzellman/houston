@@ -15,3 +15,16 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+function home_submit_clicked() {
+    alert("checked the button - worked");
+}
+
+function email_sent_clicked() {
+    alert("Email Sent");
+}
+
+function text_sent_clicked() {
+    alert("Text Message Sent");
+}

@@ -7,6 +7,12 @@ class SignupsController < ApplicationController
 
   def create
     add_email
+    @email = params[:signup][:email]
+    respond_to do |format|
+      format.js { render :js => "home_submit_clicked();" }
+    end
+
+
   end
 
   private

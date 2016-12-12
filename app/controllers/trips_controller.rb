@@ -46,6 +46,10 @@ class TripsController < ApplicationController
     trip = Trip.find(params[:id])
     puts "This trip is for #{trip.client_email}"
     SherpaMailer.send_itinerary_link(trip).deliver_now
+
+    respond_to do |format|
+      format.js { render :js => "email_sent_clicked();" }
+    end
   end
 
   def send_itineraty_sms
@@ -63,7 +67,9 @@ class TripsController < ApplicationController
                                         to: "+1#{number_to_send_to}",
                                         body: "FUN HAS ARRIVED #{trip_url(trip)}",
                                     })
-    puts 'Message SENT'
+    respond_to do |format|
+      format.js { render :js => "text_sent_clicked();" }
+    end
   end
 
 
