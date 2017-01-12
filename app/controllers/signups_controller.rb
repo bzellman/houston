@@ -11,7 +11,7 @@ class SignupsController < ApplicationController
     respond_to do |format|
       format.js { render :js => "home_submit_clicked();" }
     end
-    # redirect_to #home_alert
+    redirect_to #home_alert
 
   end
 

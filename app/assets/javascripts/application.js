@@ -18,7 +18,7 @@
 
 
 function home_submit_clicked() {
-    alert("checked the button - worked");
+    alert("Thanks For Signing Up! We'll be In Touch Soon!");
 }
 
 function email_sent_clicked() {
