@@ -18,13 +18,13 @@
 
 
 function home_submit_clicked() {
-    alert("Thanks For Signing Up! We'll be In Touch Soon!");
+    alert("Thanks for signing up! We'll be in touch shortly!");
 }
 
 function email_sent_clicked() {
-    alert("Email Sent");
+    alert("Email Sent!");
 }
 
 function text_sent_clicked() {
-    alert("Text Message Sent");
+    alert("Text Message Sent!");
 }
