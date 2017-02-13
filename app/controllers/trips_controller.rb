@@ -65,7 +65,7 @@ class TripsController < ApplicationController
     @client.account.messages.create({
                                         from: "+1#{twilio_phone_number}",
                                         to: "+1#{number_to_send_to}",
-                                        body: "FUN HAS ARRIVED #{trip_url(trip)}",
+                                        body: "It's Sherpa Time #{trip_url(trip)}",
                                     })
     respond_to do |format|
       format.js { render :js => "text_sent_clicked();" }
